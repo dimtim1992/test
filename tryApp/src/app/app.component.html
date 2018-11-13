@@ -1,0 +1,26 @@
+<h3>GET USERS</h3>
+<div>
+  <button (click)="getUsers()">GET USERS</button>
+  <div *ngIf="users">
+    <ul>
+      <li *ngFor="let user of users">
+        <p>Name of login: {{user?.name}}</p>
+        <p>Age of login: {{user?.age}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h3>ADD USER</h3>
+<div>
+  <button (click)="addUser()">ADD USERS</button>
+  <div *ngIf="newUser">
+    <ul>
+      <li *ngFor="let user of users">
+        <p>Name of login: {{user?.name}}</p>
+        <p>Age of login: {{user?.age}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
